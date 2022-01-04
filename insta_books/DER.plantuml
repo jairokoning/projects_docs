@@ -1,0 +1,60 @@
+@startuml ""
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+'skinparam linetype ortho
+
+entity "**profiles**" as profiles {
+  id : uuid <<PK>> <<generated>>
+  --
+  name : varchar(300) 
+  --
+  stars : integer
+  --
+  priority : boolean
+  --
+  level : varchar(10)
+  --
+  downloaded : boolean
+  --
+  references_checked : boolean
+  --
+  tagged_checked : boolean
+  --
+  sugestions_checked : boolean
+}
+
+entity "**categories**" as categories {
+  id : uuid <<PK>> <<generated>>
+  --
+  name : varchar(200)
+}
+
+entity "**types**" as types {
+  id : uuid <<PK>> <<generated>>
+  --
+  name : varchar(200)
+}
+
+entity "**profiles_categories**" as profiles_categories{
+  profile_id : uuid <<FK>>
+  --
+  category_id : uuid <<FK>>
+}
+
+entity "**profiles_types**" as profiles_types {
+  profile_id : uuid <<FK>>
+  --
+  type_id : uuid <<FK>>
+}
+
+profiles::id "1" -- "0..n" profiles_categories::profile_id
+profiles::id "1" -- "0..n" profiles_types::profile_id
+
+types::id "0" -- "0" profiles_types::profile_id
+categories::id "0" -- "0" profiles_categories::categorie_id
+
+
+@enduml
