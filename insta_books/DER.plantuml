@@ -17,6 +17,8 @@ entity "**profiles**" as profiles {
   --
   level : varchar(10)
   --
+  has_reference : boolean
+  --
   downloaded : boolean
   --
   references_checked : boolean
@@ -50,11 +52,11 @@ entity "**profiles_types**" as profiles_types {
   type_id : uuid <<FK>>
 }
 
-profiles::id "1" -- "0..n" profiles_categories::profile_id
-profiles::id "1" -- "0..n" profiles_types::profile_id
+categories::id "1" -right- "0..n" profiles_categories::category_id
+profiles_categories::profile_id "0..n" -right- "1" profiles::id
 
-types::id "0" -- "0" profiles_types::profile_id
-categories::id "0" -- "0" profiles_categories::categorie_id
+profiles::id "1" -right- "0..n" profiles_types::profile_id
+profiles_types::type_id "0..n" -right- "1" types::id
 
 
 @enduml
