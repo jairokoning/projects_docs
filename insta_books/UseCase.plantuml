@@ -1,0 +1,45 @@
+@startuml ""
+left to right direction
+actor "User" as fcProfile
+rectangle Profile {
+  usecase "Create\nProfile" as Profile_UC1
+  usecase "List\nProfiles" as Profile_UC2
+  usecase "Show\nProfile" as Profile_UC3
+  usecase "Update\nProfile" as Profile_UC4
+  usecase "Delete\nProfile" as Profile_UC5
+}
+fcProfile --> Profile_UC1
+fcProfile --> Profile_UC2
+fcProfile --> Profile_UC3
+fcProfile --> Profile_UC4
+fcProfile --> Profile_UC5
+
+actor "User" as fcCategory
+rectangle Category {
+  usecase "Create\nCategory" as Category_UC1
+  usecase "List\nCategories" as Category_UC2
+  usecase "Show\nCategory" as Category_UC3
+  usecase "Update\nCategory" as Category_UC4
+  usecase "Delete\nCategory" as Category_UC5
+}
+fcCategory --> Category_UC1
+fcCategory --> Category_UC2
+fcCategory --> Category_UC3
+fcCategory --> Category_UC4
+fcCategory --> Category_UC5
+
+actor "User" as fcType
+rectangle Type {
+  usecase "Create\nType" as Type_UC1
+  usecase "List\nTypes" as Type_UC2
+  usecase "Show\nType" as Type_UC3
+  usecase "Update\nType" as Type_UC4
+  usecase "Delete\nType" as Type_UC5
+}
+fcType --> Type_UC1
+fcType --> Type_UC2
+fcType --> Type_UC3
+fcType --> Type_UC4
+fcType --> Type_UC5
+
+@enduml
