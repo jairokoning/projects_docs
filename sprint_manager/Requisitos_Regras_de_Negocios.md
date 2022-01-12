@@ -61,7 +61,7 @@
 
 - It should NOT be able to create a duplicated User Account
 
-#### Show Profile
+#### Show User Account Profile
 
 **Functional Requirements**
 
@@ -71,27 +71,32 @@
 
 - User should be authenticated to show Account Profile
 
-#### Update Organization
+#### Update User Account
 
 **Functional Requirements**
 
-- It should be able to update Organization data
+- User should be able to update Account
 
 **Rules**
 
-- Just Admin User or PO User should be able to change the data
+- User should be authenticated to update Account
 
-#### Delete Organization
+#### Delete User Account
 
 **Functional Requirements**
 
-- It should be able to delete Organization
+- User should be able to delete self Account
 
 **Rules**
 
-- Just Admin User should be able to delete Organization
+- User should be authenticated
 
 ___
+
+## Change linked Organization
+
+## Workspace
+
 ## Projects
 
 ---
