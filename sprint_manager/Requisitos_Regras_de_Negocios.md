@@ -99,6 +99,27 @@ ___
 
 ## Projects
 
+#### Create Project
+
+**Functional Requirements**
+- It should be able to create new Project
+
+**Rules**
+- Project needs to be linked with a previous created Workspace
+
+#### List Projects
+
+- **Requirements**
+  - It should be able to list all created Projects of a Workspace
+  - It should be able to filter active/inactive Projects
+ 
+
+#### Show Project
+
+#### Update Project
+
+#### Delete Project
+
 ---
 ## Epics
 
