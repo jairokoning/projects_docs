@@ -115,16 +115,86 @@ ___
  
 
 #### Show Project
+- **Requirements**
+  - It should be able to show Project details
+
+#### Show Project Epics
+- **Requirements**
+  - It should be able to show all Epics of a Project
+
+#### Show Project Tasks
+- **Requirements**
+  - It should be able to show all Tasks of a Project
 
 #### Update Project
+- **Requirements**
+  - It should be able to update Project
 
 #### Delete Project
+- **Requirements**
+  - It should be able to delete Project
 
 ---
 ## Epics
 
+#### Create Epic
+- **Requirements**
+  - It should be able to create new Epic
+- **Rules**
+  - Epic should be linked to a Project
+  - User should be authenticated
+
+#### List Epics of Project
+- **Requirements**
+  - It should be able to list all Epics of a Project
+- **Rules**
+  - User should be authenticated
+
+#### Show Epic
+- **Requirements**
+  - It should be able to show Epic details
+- **Rules**
+  - User should be authenticated
+
+#### Update Epic
+- **Requirements**
+  - It should be able to update Epic
+- **Rules**
+  - User should be authenticated
+
+#### Delete Epic
+- **Requirements**
+  - It should be able to delete Epic
+- **Rules**
+  - User should be authenticated
+
 ---
 ## Tasks
+#### Create Task
+- **Requirements**
+  - It should be able to create new Task
+  - It should be able to link Task with Epic
+- **Rules**
+  - Task should be linked to a Project
+  - User should be authenticated
+
+#### Show Task
+- **Requirements**
+  - It should be able to show Task details
+- **Rules**
+  - User should be authenticated
+
+#### Update Task
+- **Requirements**
+  - It should be able to update Task
+- **Rules**
+  - User should be authenticated
+
+#### Delete Task
+- **Requirements**
+  - It should be able to delete Task
+- **Rules**
+  - User should be authenticated
 
 ---
 ## Sprints
