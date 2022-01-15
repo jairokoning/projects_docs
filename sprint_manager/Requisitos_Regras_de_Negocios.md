@@ -174,6 +174,7 @@ ___
 - **Requirements**
   - It should be able to create new Task
   - It should be able to link Task with Epic
+  - It should be able to link Task with Sprint
 - **Rules**
   - Task should be linked to a Project
   - User should be authenticated
@@ -198,3 +199,44 @@ ___
 
 ---
 ## Sprints
+#### Create Sprint
+- **Requirements**
+  - It should be able to create new Sprint
+- **Rules**
+  - Just Admin/PO User should be able to create Sprint
+  - User should be authenticated
+
+#### Show Sprint
+- **Requirements**
+  - It should be able to show Sprint details
+- **Rules**
+  - User should be authenticated
+
+#### Show Sprint Tasks
+- **Requirements**
+  - It should be able to show Sprint Tasks
+- **Rules**
+  - User should be authenticated
+
+#### Update Sprint
+- **Requirements**
+  - It should be able to update Sprint
+- **Rules**
+  - User should be authenticated
+
+#### Start Sprint
+- **Requirements**
+  - It should be able to start Sprint
+- **Rules**
+  - User should be authenticated
+
+ #### Close Sprint
+- **Requirements**
+  - It should be able to close Sprint
+- **Rules**
+  - User should be authenticated
+#### Delete Sprint
+- **Requirements**
+  - It should be able to delete Sprint
+- **Rules**
+  - User should be authenticated
