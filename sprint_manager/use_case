@@ -9,7 +9,11 @@ actor Administrador as adm
 actor P.O as po
 actor Desenvolvedor as dev
 '=== Casos de Uso ===
+'Tenant
 usecase "Criar\nTenant" as createTenant
+usecase "Atualizar\nTenant" as updateTenant
+usecase "Excluir\nTenant" as deleteTenant
+
 usecase "Criar\nConta" as createAccount
 usecase "Convidar\nMembros" as inviteMembers
 usecase "Criar\nWorkspace" as createWorkspace
